@@ -13,6 +13,13 @@ main = defaultMain [
   ]
 
 
+numbers = [1..4]
+characters = ['x'..'z']
+
 problem1 = test [
-    myLast [1, 2, 3, 4]  ~=?  4
+    myLast   numbers ~=?  4,
+    myLast'  numbers ~=?  4,
+
+    myLast   characters ~=? 'z',
+    myLast'  characters ~=? 'z'
   ]
