@@ -1,2 +1,22 @@
 Name:		ninety-nine-problems
 Version:	0.1.0.0
+
+Build-Type:	Simple
+Cabal-Version:	>= 1.8
+
+
+Library
+    HS-Source-Dirs:	src
+    Exposed-Modules:    Lists
+    Build-Depends:      base >= 4
+
+
+Test-Suite lists-test
+    Type:               exitcode-stdio-1.0
+    HS-Source-Dirs:     testsuite
+    Main-Is:            ListsTest.hs
+    Build-Depends:      base >= 4,
+                        ninety-nine-problems,
+                        HUnit,
+                        test-framework,
+                        test-framework-hunit
