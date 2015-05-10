@@ -19,7 +19,9 @@ characters = ['x'..'z']
 problem1 = test [
     myLast   numbers ~=?  4,
     myLast'  numbers ~=?  4,
+    myLast'' numbers ~=?  4,
 
     myLast   characters ~=? 'z',
-    myLast'  characters ~=? 'z'
+    myLast'  characters ~=? 'z',
+    myLast'' characters ~=? 'z'
   ]
