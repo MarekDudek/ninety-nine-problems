@@ -10,10 +10,10 @@ Library
   Build-Depends:       base >= 4
 
 
-Test-Suite hunit-test
+Test-Suite p01-last-element-of-list
     Type:              exitcode-stdio-1.0
-    HS-Source-Dirs:    testsuite/tests
-    Main-Is:           P01_last_element_of_list.hs
+    HS-Source-Dirs:    src, testsuite/tests
+    Main-Is:           P01_last_element_of_list_test.hs
     Build-Depends:     base >= 4,
                        HUnit,
                        test-framework,
